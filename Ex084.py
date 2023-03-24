@@ -5,9 +5,13 @@ data = []
 while True:
     name = str(input('Name: ')).strip()
     weight = float(input('weight: '))
+    list.append(name)
+    list.append(weight)
     data.append(list[:])
+    list.clear()
     ask = str(input('Do you want to continue? Y or N ')).strip().upper()
     if ask == 'N':
         break
 print(list)
 print(data)
+
