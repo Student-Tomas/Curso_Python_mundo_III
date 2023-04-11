@@ -25,10 +25,12 @@ while True:
     print('~-'*30)
     detail = int(input('Which student do you want to see in detail? enter 999 to stop '))
     if detail == 999:
+        print('<<< Good Bye! >>>')
         break
-    if detail <= len(list1):
-       print('<<< Good Bye! >>>')
-       print(f'The grades of {list1[0][0]} are: {list1[detail-1][0]} and {list1[detail-1][1]}')
+    if detail <= len(list1) - 1:
+       print(f'The grades of {list1[detail][0]} are: {list1[detail][1]}')
+
+
 
 
 
