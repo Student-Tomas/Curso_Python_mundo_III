@@ -17,9 +17,17 @@ while True:
         ask1 = str(input('Do you want to continue? Y or N')).strip().upper()[0]
         if ask1 in "YN":
             break
-            print('Error! Please, enter Y or N: ')
-        if ask1 == "N":
+        print('Error! Please, enter Y or N: ')
+    if ask1 in "N":
             break
+print('-='*30)
+for k, v in enumerate(team):
+    print(f'{k:>3}', end="")
+    for data in v.values():
+        print(f'')
+
+
+
 
 
 
