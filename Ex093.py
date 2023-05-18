@@ -17,3 +17,5 @@ print('=-'*30)
 print(f'The player {all_data["name"]} played {len(goals_per_match)} matches, and scored a total of {all_data["total"]} goals.')
 for m, g in enumerate(goals_per_match):
     print(f'In the match number {m+1} the player {all_data["name"]} scored {g} goals.')
+
+
