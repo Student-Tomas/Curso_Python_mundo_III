@@ -10,30 +10,26 @@ while True:
     goals_per_match.clear()
     for x in range(0, player['matches']):
         goals_per_match.append(int(input(f'How many goals in match {x+1} did {player["name"]} score? ')))
-    player['goals'] = goals_per_match
+    player['goals'] = goals_per_match[:]
     player['total'] = sum(goals_per_match)
     team.append(player.copy())
     while True:
-        ask1 = str(input('Do you want to continue? Y or N')).strip().upper()[0]
+        ask1 = str(input('Do you want to continue? Y or N ')).strip().upper()[0]
         if ask1 in "YN":
             break
         print('Error! Please, enter Y or N: ')
     if ask1 in "N":
             break
-print('-='*30)
+print('__'*30)
 for k, v in enumerate(team):
-    print(f'{k:>3}', end="")
+    print(f'{k:>3} ', end='')
     for data in v.values():
-        print(f'')
+        print(f'{str(data):<15} ', end='')
+    print()
+print('__' * 30)
 
 
-
-
-
-
-
-
-    '''print('~-~'*30)
+'''print('~-~'*30)
     print(player)
     print('-='*30)
     for k, v in player.items():
