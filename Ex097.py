@@ -1,8 +1,8 @@
 # Challenge number 097. Using functions, creat a program that show anything the user wants, centralized between frames above and under.
 def wright(msg):
-    msg_len = len(msg) + 4
+    msg_len = len(msg) + 8
     print('~' * msg_len)
-    print(f'  {msg}')
+    print(f'    {msg}')
     print('~' * msg_len)
 
 
