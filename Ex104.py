@@ -10,7 +10,7 @@ if n.isnumeric():
     n = int(n)
 elif n.isalpha():
     while True:
-        print(f'Error! insert only numbers')
+        print(f'\033[0:31mError! insert only numbers.\033[m')
         n = str(input('Insert an integer number: '))
         if n.isnumeric():
             break

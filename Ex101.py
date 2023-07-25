@@ -11,6 +11,8 @@ def vote(born):
         return f'Being {age} years old: COMPULSORY VOTE!'
 
 
-# Main program
-year = int(input('What is your year of born? '))
+# Main program  
+year = int(input('What is your  of born? '))
 print(vote(year))
+
+
