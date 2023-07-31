@@ -3,6 +3,6 @@ import currency
 
 number = float(input('What is the number? '))
 percent = float(input('What is the percent? '))
-print(f'The number {number} increased by {percent:.1}% is {currency.increase(number, percent)}')
+print(f'The number {number} increased by {percent:.2f}% is {currency.increase(number, percent)}')
 
 
