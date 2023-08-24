@@ -7,4 +7,3 @@ percent = int(input('What is the percent? '))
 Currency.Increase(number, percent)
 print(result)
 print(return)
-
